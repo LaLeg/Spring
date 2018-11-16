@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pizzas Prix</title>
+<link rel="stylesheet" type="text/css" th:href="@{css/pizza.css}">
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Nom Pizza</th>
+			<th>Prix</th>
+		</tr>
+		<tr th:each="p : ${pizzasprix}">
+			<td th:text="${p.nom}"></td>
+			<td th:text="${p.prix}"></td>
+		</tr>
+	</table>
+</body>
+</html>
